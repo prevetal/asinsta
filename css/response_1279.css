@@ -4,6 +4,13 @@
     /*-------------------
         Global styles
     -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 36px;
+    }
+
+
     html.custom_scroll ::-webkit-scrollbar
     {
         width: 5px;
@@ -12,11 +19,374 @@
 
 
 
-    /*--------------
-        Fancybox
-    --------------*/
-    .fancybox__slide
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
     {
-        padding: 32px;
+        padding: 20px 24px;
+    }
+
+
+    .accordion_item .head .title
+    {
+        font-size: 20px;
+        line-height: calc(100% + 10px);
+    }
+
+
+    .accordion_item .data
+    {
+        padding: 20px 24px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding: 16px 0;
+    }
+
+
+    header .menu
+    {
+        gap: 20px;
+    }
+
+
+    header .menu .btn
+    {
+        font-size: 16px;
+
+        padding: 8px;
+    }
+
+
+    header .langs .btn
+    {
+        font-size: 16px;
+    }
+
+
+    header .langs .btn picture
+    {
+        width: 22px;
+        height: 16px;
+    }
+
+
+    header .account .btn .icon
+    {
+        width: 26px;
+        height: 22px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .block_head .title
+    {
+        line-height: calc(100% + 12px);
+    }
+
+
+    .block_head .desc
+    {
+        font-size: 18px;
+        line-height: calc(100% + 10px);
+
+        margin-top: 16px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form textarea
+    {
+        height: 140px;
+    }
+
+
+    .form .submit_btn
+    {
+        font-size: 16px;
+
+        padding: 16px 32px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        min-height: 550px;
+        padding: 80px 0;
+    }
+
+
+    .first_section .data
+    {
+        width: 408px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 80px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 20px;
+        line-height: calc(100% + 10px);
+    }
+
+
+    .first_section .btn
+    {
+        font-size: 16px;
+
+        margin-top: 48px;
+        padding: 16px 32px;
+    }
+
+
+    .first_section picture
+    {
+        top: 20px;
+
+        width: 840px;
+        margin-right: -608px;
+    }
+
+
+
+    /*---------
+        Why
+    ---------*/
+    .why .grid
+    {
+        width: 576px;
+    }
+
+
+    .why .item
+    {
+        font-size: 18px;
+        line-height: calc(100% + 10px);
+
+        min-height: 240px;
+    }
+
+
+    .why .item .icon
+    {
+        width: 160px;
+        height: 160px;
+        padding: 8px 0;
+    }
+
+
+    .why .block_head
+    {
+        width: calc(100% - 624px);
+    }
+
+
+
+    /*----------------------
+        All for business
+    ----------------------*/
+    .all_for_business
+    {
+        margin-bottom: 100px;
+    }
+
+
+    .all_for_business .tabs
+    {
+        width: 320px;
+    }
+
+
+    .all_for_business .tabs .btn
+    {
+        padding: 16px;
+
+        box-shadow: 8px 8px 36px #f7fbfc;
+    }
+
+
+    .all_for_business .tabs .btn .icon + *
+    {
+        width: calc(100% - 76px);
+    }
+
+
+    .all_for_business .tab_content.active
+    {
+        width: calc(100% - 368px);
+    }
+
+
+    .all_for_business .text
+    {
+        width: 360px;
+    }
+
+
+    .all_for_business .img1
+    {
+        top: -80px;
+        left: -208px;
+
+        width: 960px;
+    }
+
+    .all_for_business .img2
+    {
+        top: -100px;
+        left: -24px;
+
+        width: 800px;
+    }
+
+    .all_for_business .img3
+    {
+        width: 1300px;
+    }
+
+    .all_for_business .img4
+    {
+        top: -68px;
+        left: -68px;
+
+        width: 960px;
+    }
+
+    .all_for_business .img5
+    {
+        top: 0;
+        left: -64px;
+
+        width: 1200px;
+    }
+
+
+
+    /*-------------
+        Tariffs
+    -------------*/
+    .tariffs
+    {
+        margin-bottom: 64px;
+    }
+
+
+    .tariffs .tariff
+    {
+        padding: 0 24px 32px;
+    }
+
+
+    .tariffs .tariff .thumb
+    {
+        height: 232px;
+    }
+
+
+    .tariffs .tariff .thumb img
+    {
+        width: 156px;
+    }
+
+
+    .tariffs .tariff ul
+    {
+        margin-top: 24px;
+
+        gap: 4px;
+    }
+
+
+    .tariffs .btn
+    {
+        font-size: 16px;
+
+        margin-top: 32px;
+        padding: 16px 32px;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .FAQ
+    {
+        margin-bottom: 64px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .data
+    {
+        padding: 64px 0 48px;
+    }
+
+
+    footer .bottom
+    {
+        padding: 20px 0;
+    }
+
+
+    footer .data .bg
+    {
+        top: 100px;
+
+        width: 600px;
+        margin-left: -760px;
+    }
+
+
+    footer .contacts .title
+    {
+        line-height: calc(100% + 12px);
+
+        margin-bottom: 40px;
+    }
+
+
+    footer .feedback
+    {
+        width: calc(100% - 372px);
+        margin-top: 0;
+    }
+
+
+    footer .feedback .success
+    {
+        font-size: 18px;
+        line-height: calc(100% + 10px);
     }
 }

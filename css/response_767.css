@@ -4,14 +4,328 @@
     /*-------------------
         Global styles
     -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 32px;
+    }
 
 
 
-    /*--------------
-        Fancybox
-    --------------*/
-    .fancybox__slide
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
     {
         padding: 20px;
+    }
+
+
+    .accordion_item .head .title
+    {
+        font-size: 18px;
+        line-height: calc(100% + 8px);
+
+        width: calc(100% - 42px);
+    }
+
+
+    .accordion_item .head .icon
+    {
+        width: 18px;
+        height: 18px;
+    }
+
+
+    .accordion_item .data
+    {
+        padding: 20px 0;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding: 12px 0;
+    }
+
+
+    header .logo img
+    {
+        width: 120px;
+        height: 42px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 28px;
+    }
+
+
+    .block_head .desc
+    {
+        font-size: 15px;
+        line-height: calc(100% + 8px);
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .submit_btn
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        padding: 60px 0;
+    }
+
+
+    .first_section .data
+    {
+        width: 100%;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 64px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 16px;
+        line-height: calc(100% + 8px);
+
+        margin-top: 20px;
+    }
+
+
+    .first_section .btn
+    {
+        font-size: 15px;
+
+        margin-top: 32px;
+    }
+
+
+    .first_section picture
+    {
+        bottom: -140px;
+
+        width: 520px;
+        margin-right: -348px;
+    }
+
+
+
+    /*---------
+        Why
+    ---------*/
+    .why .grid
+    {
+        grid-gap: 12px;
+    }
+
+
+    .why .item
+    {
+        font-size: 16px;
+        line-height: calc(100% + 8px);
+
+        min-height: 236px;
+        padding: 12px 16px 20px;
+    }
+
+
+    .why .item .icon
+    {
+        width: 132px;
+        height: 132px;
+        padding: 0;
+    }
+
+
+    .why .block_head
+    {
+        margin-bottom: 28px;
+    }
+
+
+
+    /*----------------------
+        All for business
+    ----------------------*/
+    .all_for_business .tabs
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .all_for_business .tabs .btn
+    {
+        width: 260px;
+        padding: 16px;
+    }
+
+
+    .all_for_business .tab_content.active
+    {
+        height: 480px;
+    }
+
+
+    .all_for_business .text
+    {
+        width: 100%;
+    }
+
+
+    .all_for_business #tab5 .text .col
+    {
+        padding-right: 164px;
+    }
+
+
+    .all_for_business .img1
+    {
+        top: 0;
+        left: -138px;
+
+        width: 660px;
+    }
+
+    .all_for_business .img2
+    {
+        top: 80px;
+        left: -16px;
+
+        width: 520px;
+    }
+
+    .all_for_business .img3
+    {
+        top: 68px;
+        left: 24px;
+
+        width: 960px;
+    }
+
+    .all_for_business .img4
+    {
+        top: 0;
+        left: -56px;
+
+        width: 760px;
+    }
+
+    .all_for_business .img5
+    {
+        top: 48px;
+        left: -52px;
+
+        width: 960px;
+    }
+
+
+
+    /*-------------
+        Tariffs
+    -------------*/
+    .tariffs .tariff
+    {
+        padding: 0 24px 28px;
+    }
+
+
+    .tariffs .row
+    {
+        margin-left: 0;
+    }
+
+
+    .tariffs .row > *,
+    .tariffs .row > *:last-child
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .tariffs .tariff .name
+    {
+        line-height: calc(100% + 12px);
+    }
+
+
+    .tariffs .btn
+    {
+        font-size: 15px;
+
+        margin-top: 28px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .data
+    {
+        padding: 48px 0 40px;
+    }
+
+
+    footer .bottom
+    {
+        padding: 16px 0;
+    }
+
+
+    footer .data .bg
+    {
+        width: 400px;
+        margin-left: 24px;
+    }
+
+
+    footer .contacts .title
+    {
+        margin-bottom: 28px;
+    }
+
+
+    footer .feedback
+    {
+        margin-top: 32px;
+    }
+
+
+    footer .feedback .success
+    {
+        font-size: 17px;
+    }
+
+
+    footer .feedback .success br
+    {
+        display: none;
     }
 }

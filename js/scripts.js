@@ -56,6 +56,35 @@ document.addEventListener('DOMContentLoaded', function () {
 			item.addClass('active').find('.data').slideDown(300)
 		}
 	})
+
+
+	// Smooth scrolling to anchor
+	const scrollBtns = document.querySelectorAll('.scroll_btn')
+
+	if (scrollBtns) {
+		scrollBtns.forEach(element => {
+			element.addEventListener('click', e => {
+				e.preventDefault()
+
+				let anchor = element.getAttribute('data-anchor')
+
+				document.getElementById(anchor).scrollIntoView({
+					behavior: 'smooth',
+					block: 'start'
+				}, 1000)
+			})
+		})
+	}
+
+
+	// Feedback submit
+	$('.feedback').submit(function(e) {
+		e.preventDefault()
+
+		$('.feedback .success').addClass('show')
+
+		setTimeout(() => $('.feedback .success').removeClass('show'), 5000)
+	})
 })
 
 

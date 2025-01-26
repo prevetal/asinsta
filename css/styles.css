@@ -412,30 +412,21 @@ header .menu
 }
 
 
-header .menu_item > a
+header .menu .btn
 {
     font-family: var(--font_family2);
     font-size: 20px;
     font-weight: 800;
 
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-
     padding: 20px 8px;
 
     transition: color .2s linear;
-    text-decoration: none;
     text-transform: uppercase;
-
-    color: currentColor;
 }
 
 
-header .menu_item:hover > a,
-header .menu_item > a.active
+header .menu .btn:hover,
+header .menu .btn.active
 {
     color: #556ee6;
 }
@@ -507,107 +498,6 @@ header .account .btn .icon
 
     width: 30px;
     height: 25px;
-}
-
-
-
-/*-----------------
-    Mob. header
------------------*/
-.mob_header
-{
-    position: relative;
-    z-index: 9;
-    top: 0;
-    left: 0;
-
-    display: none;
-
-    width: 100%;
-    padding: 16px 0;
-}
-
-
-.mob_header .cont
-{
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-
-.mob_header .logo
-{
-    display: block;
-
-    margin-right: auto;
-
-    text-decoration: none;
-
-    color: currentColor;
-}
-
-
-.mob_header .logo img
-{
-    display: block;
-}
-
-
-
-.mob_header .mob_menu_btn
-{
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    width: 44px;
-    height: 34px;
-    margin-right: -8px;
-    margin-left: 24px;
-    padding: 8px;
-
-    color: currentColor;
-}
-
-
-.mob_header .mob_menu_btn span
-{
-    position: relative;
-
-    display: block;
-
-    width: 100%;
-    height: 2px;
-
-    background: currentColor;
-}
-
-
-.mob_header .mob_menu_btn span:before,
-.mob_header .mob_menu_btn span:after
-{
-    position: absolute;
-    top: -8px;
-    left: 0;
-
-    display: block;
-
-    width: 100%;
-    height: 100%;
-
-    content: '';
-
-    background: currentColor;
-}
-
-
-.mob_header .mob_menu_btn span:after
-{
-    top: 8px;
 }
 
 
@@ -1023,8 +913,7 @@ header .account .btn .icon
     max-width: 100%;
 
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-gap: 20px;
 }
 
 
@@ -1044,7 +933,7 @@ header .account .btn .icon
 
     color: #59668c;
     background: #fff;
-    box-shadow: 20px 20px 65px 0 #f7fbfc;
+    box-shadow: 20px 20px 65px #f7fbfc;
 }
 
 
@@ -1105,6 +994,9 @@ header .account .btn .icon
 
 .all_for_business .tabs
 {
+    position: relative;
+    z-index: 3;
+
     display: flex;
     flex-direction: column;
 
@@ -1132,7 +1024,7 @@ header .account .btn .icon
 
     border-radius: 4px;
     background: #fff;
-    box-shadow: 20px 20px 65px 0 #f7fbfc;
+    box-shadow: 20px 20px 65px #f7fbfc;
 }
 
 
@@ -1425,11 +1317,11 @@ header .account .btn .icon
 
 .tariffs .tariff
 {
-    padding: 20px 40px 56px 40px;
+    padding: 20px 40px 56px;
 
     border-radius: 10px;
     background: #fff;
-    box-shadow: 9px 8px 29px 0 rgba(207, 231, 237, .40);
+    box-shadow: 9px 8px 29px rgba(207, 231, 237, .40);
 }
 
 
@@ -1682,8 +1574,44 @@ footer .contacts .phone .icon
 
 footer .feedback
 {
+    position: relative;
+
     width: 750px;
     max-width: 100%;
     margin-top: 14px;
     margin-left: auto;
+}
+
+
+footer .feedback .success
+{
+    font-size: 20px;
+    font-weight: 800;
+    line-height: calc(100% + 12px);
+
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+
+    display: none;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    background: #fff;
+}
+
+
+footer .feedback .success.show
+{
+    display: flex;
 }

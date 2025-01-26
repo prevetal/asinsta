@@ -3,14 +3,312 @@
     /*-------------------
         Global styles
     -------------------*/
-
-
-
-    /*--------------
-        Fancybox
-    --------------*/
-    .fancybox__slide
+    :root
     {
-        padding: 16px;
+        --font_size: 15px;
+        --font_size_title: 30px;
+    }
+
+
+    .cont
+    {
+        padding: 0 20px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
+    {
+        padding: 16px 20px;
+    }
+
+
+    .accordion_item .head .title
+    {
+        font-size: 16px;
+    }
+
+
+    .accordion_item .data
+    {
+        padding: 16px 0;
+    }
+
+
+    .accordion_item .text_block
+    {
+        font-size: 14px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo img
+    {
+        width: 116px;
+        height: 41px;
+    }
+
+
+    header .langs
+    {
+        margin-left: 24px;
+    }
+
+
+    header .langs .btn
+    {
+        font-size: 15px;
+
+        gap: 6px;
+    }
+
+
+    header .langs .btn picture
+    {
+        width: 20px;
+        height: 15px;
+    }
+
+
+    header .account
+    {
+        margin-left: 24px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .submit_btn
+    {
+        width: 100%;
+        padding: 14px 28px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        min-height: 0;
+        padding: 48px 0 312px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 60px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 15px;
+    }
+
+
+    .first_section .btn
+    {
+        margin-top: 28px;
+        padding: 14px 28px;
+    }
+
+
+    .first_section picture
+    {
+        bottom: -112px;
+
+        width: 480px;
+        margin-right: -228px;
+    }
+
+
+
+    /*---------
+        Why
+    ---------*/
+    .why
+    {
+        padding-top: 80px;
+    }
+
+
+    .why .grid
+    {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+
+    .why .item
+    {
+        min-height: 0;
+        padding: 12px 24px 20px;
+
+        box-shadow: 20px 20px 65px #f7fbfc;
+    }
+
+
+    .why .block_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+
+    /*----------------------
+        All for business
+    ----------------------*/
+    .all_for_business .tabs
+    {
+        width: calc(100% + 40px);
+        max-width: calc(100% + 40px);
+        margin: 0 -20px 32px;
+        padding: 0 20px;
+
+        scroll-padding: 0 20px;
+    }
+
+
+    .all_for_business .tabs .btn
+    {
+        width: 280px;
+    }
+
+
+    .all_for_business .text .cols
+    {
+        flex-direction: column;
+
+        margin: 0;
+
+        gap: 4px;
+    }
+
+
+    .all_for_business .text .col
+    {
+        gap: 4px;
+    }
+
+
+    .all_for_business #tab5 .text .col
+    {
+        padding-right: 0;
+    }
+
+
+    .all_for_business .img1
+    {
+        top: 60px;
+        left: -128px;
+
+        width: 580px;
+    }
+
+    .all_for_business .img2
+    {
+        top: 112px;
+
+        width: 480px;
+    }
+
+    .all_for_business .img3
+    {
+        top: 112px;
+        left: -16px;
+
+        width: 880px;
+    }
+
+    .all_for_business .img4
+    {
+        top: 40px;
+        left: -52px;
+
+        width: 680px;
+    }
+
+    .all_for_business .img5
+    {
+        top: 192px;
+        left: -36px;
+
+        width: 680px;
+    }
+
+
+
+    /*-------------
+        Tariffs
+    -------------*/
+    .tariffs
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .tariffs .tariff
+    {
+        padding: 0 20px 20px;
+    }
+
+
+    .tariffs .tariff ul
+    {
+        margin-top: 20px;
+
+        gap: 2px;
+    }
+
+
+    .tariffs .btn
+    {
+        padding: 14px 28px;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .FAQ
+    {
+        margin-bottom: 60px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .bottom
+    {
+        font-size: 14px;
+    }
+
+
+    footer .feedback .success
+    {
+        font-size: 16px;
     }
 }

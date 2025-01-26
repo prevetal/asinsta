@@ -31,6 +31,7 @@
 		<!-- Connecting style files -->
 		<link rel="stylesheet" href="css/styles.css" async>
 
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
 		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
 		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
 		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
@@ -50,28 +51,28 @@
 						</div>
 
 						<nav class="menu row">
-							<div class="menu_item">
-								<a href="/">Переваги</a>
+							<div>
+								<button class="btn scroll_btn" data-anchor="first_section">Переваги</button>
 							</div>
 
-							<div class="menu_item">
-								<a href="/">Функції</a>
+							<div>
+								<button class="btn scroll_btn" data-anchor="all_for_business">Функції</button>
 							</div>
 
-							<div class="menu_item">
-								<a href="/">Тарифи</a>
+							<div>
+								<button class="btn scroll_btn" data-anchor="tariffs">Тарифи</button>
 							</div>
 
-							<div class="menu_item">
-								<a href="/">Відгуки</a>
+							<div>
+								<button class="btn scroll_btn" data-anchor="">Відгуки</button>
 							</div>
 
-							<div class="menu_item">
-								<a href="/">FAQ</a>
+							<div>
+								<button class="btn scroll_btn" data-anchor="FAQ">FAQ</button>
 							</div>
 
-							<div class="menu_item">
-								<a href="/">Контакти</a>
+							<div>
+								<button class="btn scroll_btn" data-anchor="contacts">Контакти</button>
 							</div>
 						</nav>
 
@@ -95,20 +96,7 @@
 				</header>
 
 
-				<!-- <section class="mob_header">
-					<div class="cont row">
-						<div class="logo">
-							<img src="images/logo.svg" alt="">
-						</div>
-
-						<button class="mob_menu_btn">
-							<span></span>
-						</button>
-					</div>
-				</section> -->
-
-
-				<section class="first_section">
+				<section class="first_section" id="first_section">
 					<div class="cont">
 						<div class="data">
 							<div class="title">Asinsta</div>
@@ -179,7 +167,7 @@
 				</section>
 
 
-				<section class="all_for_business tabs_container">
+				<section class="all_for_business tabs_container" id="all_for_business">
 					<div class="cont">
 						<div class="block_head">
 							<div class="title">Усе для вашого бізнесу</div>
@@ -380,7 +368,7 @@
 				</section>
 
 
-				<section class="tariffs">
+				<section class="tariffs" id="tariffs">
 					<div class="cont">
 						<div class="block_head">
 							<div class="title">Гнучкі плани для будь-якого магазину</div>
@@ -492,7 +480,7 @@
 				</section>
 
 
-				<section class="FAQ">
+				<section class="FAQ" id="FAQ">
 					<div class="cont">
 						<div class="block_head">
 							<div class="title">Часті запитання</div>
@@ -600,7 +588,7 @@
 			</div>
 
 
-			<footer>
+			<footer id="contacts">
 				<div class="data">
 					<div class="cont row">
 						<div class="contacts">
@@ -639,6 +627,8 @@
 							<div class="submit">
 								<button type="submit" class="submit_btn">відправити повідомлення</button>
 							</div>
+
+							<div class="success">Ваше повідомлення успішно відправлене,<br> ми обов'язково зв'яжемось з Вами.</div>
 						</form>
 					</div>
 

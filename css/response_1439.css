@@ -1,0 +1,335 @@
+@media print,
+(max-width: 1439px)
+{
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
+    {
+        padding: 24px 28px;
+    }
+
+
+    .accordion_item .head .title
+    {
+        font-size: 22px;
+        line-height: calc(100% + 12px);
+
+        width: calc(100% - 46px);
+    }
+
+
+    .accordion_item .data
+    {
+        padding: 24px 28px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding: 20px 0;
+    }
+
+
+    header .menu
+    {
+        gap: 24px;
+    }
+
+
+    header .menu .btn
+    {
+        font-size: 17px;
+
+        padding: 12px 8px;
+    }
+
+
+    header .langs .btn
+    {
+        font-size: 17px;
+    }
+
+
+    header .langs .btn picture
+    {
+        width: 24px;
+        height: 18px;
+
+        border-radius: 2px;
+    }
+
+
+    header .account .btn .icon
+    {
+        width: 28px;
+        height: 23px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .desc
+    {
+        font-size: 22px;
+        line-height: calc(100% + 12px);
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .submit
+    {
+        padding-top: 8px;
+    }
+
+
+    .form .submit_btn
+    {
+        font-size: 17px;
+
+        padding: 17px 34px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        min-height: 650px;
+        padding: 100px 0;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 92px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 22px;
+        line-height: calc(100% + 12px);
+
+        margin-top: 24px;
+    }
+
+
+    .first_section .btn
+    {
+        font-size: 17px;
+
+        margin-top: 52px;
+        padding: 17px 34px;
+    }
+
+
+    .first_section picture
+    {
+        top: 28px;
+
+        width: 960px;
+        margin-right: -720px;
+    }
+
+
+
+    /*---------
+        Why
+    ---------*/
+    .why
+    {
+        padding: 60px 0;
+    }
+
+
+    .why .grid
+    {
+        width: 720px;
+    }
+
+
+    .why .item
+    {
+        font-size: 22px;
+        line-height: calc(100% + 12px);
+
+        min-height: 280px;
+    }
+
+
+    .why .block_head
+    {
+        width: 400px;
+    }
+
+
+
+    /*----------------------
+        All for business
+    ----------------------*/
+    .all_for_business
+    {
+        margin-bottom: 140px;
+        padding: 60px 0;
+    }
+
+
+    .all_for_business .tabs
+    {
+        width: 360px;
+    }
+
+
+    .all_for_business .tabs .btn
+    {
+        box-shadow: 10px 10px 48px #f7fbfc;
+    }
+
+
+    .all_for_business .tabs .btn .desc
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .all_for_business .tab_content.active
+    {
+        width: calc(100% - 440px);
+    }
+
+
+    .all_for_business .img1
+    {
+        top: -60px;
+        left: -220px;
+
+        width: 1040px;
+    }
+
+    .all_for_business .img2
+    {
+        top: -140px;
+        left: -28px;
+
+        width: 900px;
+    }
+
+    .all_for_business .img3
+    {
+        top: -24px;
+        left: -24px;
+
+        width: 1500px;
+    }
+
+    .all_for_business .img4
+    {
+        top: -100px;
+        left: -80px;
+
+        width: 1140px;
+    }
+
+    .all_for_business .img5
+    {
+        top: -32px;
+        left: -80px;
+
+        width: 1400px;
+    }
+
+
+
+    /*-------------
+        Tariffs
+    -------------*/
+    .tariffs
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .tariffs .tariff
+    {
+        padding: 20px 40px 40px;
+
+        box-shadow: 6px 5px 20px rgba(207, 231, 237, .40);
+    }
+
+
+    .tariffs .tariff ul
+    {
+        margin-top: 28px;
+
+        gap: 6px;
+    }
+
+
+    .tariffs .btn
+    {
+        font-size: 17px;
+
+        margin-top: 40px;
+        padding: 17px 34px;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .FAQ
+    {
+        margin-bottom: 80px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .data
+    {
+        padding: 80px 0 60px;
+    }
+
+
+    footer .bottom
+    {
+        padding: 24px 0;
+    }
+
+
+    footer .data .bg
+    {
+        top: 124px;
+
+        width: 680px;
+        margin-left: -840px;
+    }
+
+
+    footer .contacts .title
+    {
+        margin-bottom: 48px;
+    }
+
+
+    footer .feedback
+    {
+        width: 720px;
+        margin-top: 12px;
+    }
+}

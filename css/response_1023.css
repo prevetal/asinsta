@@ -4,71 +4,269 @@
     /*-------------------
         Global styles
     -------------------*/
-
-
-
-    /*--------------
-        Fancybox
-    --------------*/
-    .fancybox__slide
+    header .menu
     {
-        padding: 24px;
+        display: none;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .desc
+    {
+        font-size: 16px;
+
+        margin-top: 12px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        min-height: 550px;
+        padding: 68px 0;
+    }
+
+
+    .first_section .data
+    {
+        width: 400px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 72px;
+    }
+
+
+    .first_section .desc
+    {
+        font-size: 18px;
+    }
+
+
+    .first_section .btn
+    {
+        margin-top: 40px;
+    }
+
+
+    .first_section picture
+    {
+        top: auto;
+        bottom: -160px;
+
+        width: 680px;
+        margin-right: -520px;
+    }
+
+
+
+    /*---------
+        Why
+    ---------*/
+    .why .grid
+    {
+        order: 2;
+
+        width: 100%;
+    }
+
+
+    .why .item
+    {
+        min-height: 252px;
+        padding: 12px 24px 24px;
+    }
+
+
+    .why .item .icon
+    {
+        width: 160px;
+        height: 160px;
+        padding: 8px 0;
+    }
+
+
+    .why .block_head
+    {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+
+
+    /*----------------------
+        All for business
+    ----------------------*/
+    .all_for_business
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .all_for_business .tabs
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        max-width: calc(100% + 48px);
+        margin: 0 -24px 48px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scroll-padding: 0 24px;
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .all_for_business .tabs::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+
+    .all_for_business .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .all_for_business .tabs .btn
+    {
+        display: inline-block;
+
+        width: 268px;
+        max-width: none;
+        margin: 0;
+        padding: 16px 20px;
+
+        vertical-align: top;
+        white-space: normal;
+
+        scroll-snap-align: start;
+    }
+
+
+    .all_for_business .tabs .btn + .btn
+    {
+        margin-left: 16px;
+    }
+
+
+    .all_for_business .tabs .btn .icon + *
+    {
+        width: 100%;
+        margin-top: 12px;
+    }
+
+
+    .all_for_business .tab_content.active
+    {
+        width: 100%;
+        height: 560px;
+    }
+
+
+    .all_for_business .img2
+    {
+        top: -128px;
+        left: -28px;
+    }
+
+    .all_for_business .img3
+    {
+        top: -24px;
+        left: 0;
+
+        width: 1280px;
+    }
+
+    .all_for_business .img5
+    {
+        top: 0;
+
+        width: 1160px;
+    }
+
+
+
+    /*-------------
+        Tariffs
+    -------------*/
+    .tariffs .tariff
+    {
+        padding: 0 24px 32px;
+    }
+
+
+    .tariffs .row > *
+    {
+        width: calc(50% - 20px);
+    }
+
+
+    .tariffs .row > *:last-child
+    {
+        width: calc(100% - 20px);
+    }
+
+
+    .tariffs .tariff .thumb
+    {
+        height: 220px;
+    }
+
+
+    .tariffs .tariff .thumb img
+    {
+        width: 148px;
     }
 
 
 
     /*------------
-        Header
+        Footer
     ------------*/
-    header
+    footer .data
     {
-        position: fixed;
-        z-index: 101;
+        padding: 60px 0 48px;
+    }
+
+
+    footer .data .bg
+    {
         top: 0;
-        right: 100%;
-        left: auto;
+        left: 50%;
 
-        width: 325px;
-        height: 100%;
-        min-height: -moz-available;
-        min-height: -webkit-fill-available;
-        min-height:         fill-available;
-        margin: 0;
-        padding: 0;
-
-        transition: transform .3s linear;
-
-        background: #fff;
-    }
-
-    header.show
-    {
-        transform: translateX(100%);
+        width: 520px;
+        margin-left: -60px;
     }
 
 
-    header .scroll
+    footer .contacts .title
     {
-        display: flex;
-        overflow: auto;
-        flex-direction: column;
-
-        height: 100%;
-        min-height: -moz-available;
-        min-height: -webkit-fill-available;
-        min-height:         fill-available;
-        padding: 24px 0;
-
-        overscroll-behavior-y: contain;
+        margin-bottom: 32px;
     }
 
 
-
-    /*-----------------
-        Mob. header
-    -----------------*/
-    .mob_header
+    footer .feedback
     {
-        display: block;
+        width: 100%;
+        margin-top: 40px;
     }
 }
