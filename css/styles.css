@@ -915,10 +915,14 @@ header .account .btn .icon
     font-size: 20px;
     font-weight: 800;
 
+    display: inline-block;
+
     margin-top: 60px;
     padding: 20px 36px;
 
     transition: background .2s linear;
+    vertical-align: top;
+    text-decoration: none;
     text-transform: uppercase;
 
     color: #fff;
@@ -1482,18 +1486,27 @@ header .account .btn .icon
 }
 
 
+.tariffs .link
+{
+    margin-top: 28px;
+
+    text-align: center;
+}
+
+
 .tariffs .btn
 {
     font-family: var(--font_family2);
     font-size: 20px;
     font-weight: 800;
 
-    display: block;
+    display: inline-block;
 
-    margin: 28px auto 0;
     padding: 20px 36px;
 
     transition: background .2s linear;
+    vertical-align: top;
+    text-decoration: none;
     text-transform: uppercase;
 
     color: #fff;

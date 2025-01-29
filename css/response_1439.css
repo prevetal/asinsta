@@ -293,11 +293,16 @@
     }
 
 
+    .tariffs .link
+    {
+        margin-top: 40px;
+    }
+
+
     .tariffs .btn
     {
         font-size: 17px;
 
-        margin-top: 40px;
         padding: 17px 34px;
     }
 
