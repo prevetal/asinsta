@@ -23,6 +23,9 @@
 		<meta name="msapplication-TileColor" content="#2A3042">
 		<meta name="theme-color" content="#2A3042">
 
+		<!-- Site icon, size 32x32, transparency supported. Recommended format: .ico or .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
 		<!-- Connecting fonts from Google -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,21 +79,38 @@
 							</div>
 						</nav>
 
-						<div class="langs">
-							<button class="btn">
+						<div class="langs modal_cont">
+							<button class="btn mini_modal_btn" data-modal-id="#langs_modal">
 								<picture>
-									<source srcset="images/flag_ua.webp" type="image/webp">
-									<img src="images/flag_ua.png" alt="" loading="lazy">
+									<img src="images/flag_ua.svg" alt="" loading="lazy">
 								</picture>
 
 								<span>UA</span>
 							</button>
+
+							<div class="mini_modal" id="langs_modal">
+								<div><a href="/" class="btn">
+									<picture>
+										<img src="images/flag_en.svg" alt="" loading="lazy">
+									</picture>
+
+									<span>EN</span>
+								</a></div>
+
+								<div><a href="/" class="btn">
+									<picture>
+										<img src="images/flag_de.svg" alt="" loading="lazy">
+									</picture>
+
+									<span>DE</span>
+								</a></div>
+							</div>
 						</div>
 
 						<div class="account">
-							<button class="btn">
+							<a href="https://asinsta.com/login" target="_blank" rel="noopener nofollow" class="btn">
 								<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
-							</button>
+							</a>
 						</div>
 					</div>
 				</header>

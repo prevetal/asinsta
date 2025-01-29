@@ -1,12 +1,6 @@
-<svg width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="flags / UA">
-<rect id="Mask" y="0.5" width="28" height="20" rx="2" fill="white"/>
-<mask id="mask0_2001_1117" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="21">
-<rect id="Mask_2" y="0.5" width="28" height="20" rx="2" fill="white"/>
-</mask>
-<g mask="url(#mask0_2001_1117)">
-<path id="Rectangle 2" fill-rule="evenodd" clip-rule="evenodd" d="M0 11.1667H28V0.5H0V11.1667Z" fill="#156DD1"/>
-<path id="Rectangle 2_2" fill-rule="evenodd" clip-rule="evenodd" d="M0 20.5H28V11.1667H0V20.5Z" fill="#FFD948"/>
-</g>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <g fill-rule="evenodd" stroke-width="1pt">
+    <path fill="gold" d="M0 0h640v480H0z"/>
+    <path fill="#0057b8" d="M0 0h640v240H0z"/>
+  </g>
 </svg>

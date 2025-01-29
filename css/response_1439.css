@@ -64,6 +64,12 @@
     }
 
 
+    header .langs .mini_modal
+    {
+        padding-top: 38px;
+    }
+
+
     header .account .btn .icon
     {
         width: 28px;
