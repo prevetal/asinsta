@@ -48,7 +48,7 @@
     margin: 0;
     padding: 0;
 
-    scroll-margin-top: 24px;
+    scroll-margin-top: 126px;
 }
 
 *:before,
@@ -392,13 +392,15 @@ button
 ------------*/
 header
 {
-    position: relative;
-    z-index: 9;
+    position: sticky;
+    z-index: 50;
     top: 0;
     left: 0;
 
     width: 100%;
     padding: 18px 0;
+
+    background: var(--bg);
 }
 
 
@@ -487,9 +489,10 @@ header .langs .btn
     display: flex;
     align-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
 
+    white-space: nowrap;
     text-decoration: none;
     text-transform: uppercase;
 
@@ -530,7 +533,8 @@ header .langs .mini_modal
     display: flex;
     flex-direction: column;
 
-    width: calc(100% + 16px);
+    width: auto;
+    min-width: calc(100% + 16px);
     padding: 42px 8px 8px 8px;
 
     border-radius: 10px;

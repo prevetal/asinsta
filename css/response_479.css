@@ -1,5 +1,15 @@
 @media (max-width: 479px)
 {
+    /*------------------
+        Reset styles
+    ------------------*/
+    *
+    {
+        scroll-margin-top: 75px;
+    }
+
+
+
     /*-------------------
         Global styles
     -------------------*/

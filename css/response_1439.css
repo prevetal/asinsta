@@ -1,6 +1,16 @@
 @media print,
 (max-width: 1439px)
 {
+    /*------------------
+        Reset styles
+    ------------------*/
+    *
+    {
+        scroll-margin-top: 110px;
+    }
+
+
+
     /*---------------
         Accordion
     ---------------*/
